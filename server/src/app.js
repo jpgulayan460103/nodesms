@@ -4,9 +4,10 @@ const app = express();
 
 app.use(json())
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 app.get('/', async (req, res) => {
+    console.log("asdasd");
     res.json({ status: true, message: "Our node.js app works" })
 });
 
